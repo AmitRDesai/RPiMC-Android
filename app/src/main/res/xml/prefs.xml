@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Raspberry Pi">
+    <EditTextPreference
+        android:defaultValue="192.168.43.156"
+        android:key="ip"
+        android:summary="192.168.43.156"
+        android:title="IP Address">
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="RPiMCv1.0.jar"
+        android:key="server_name"
+        android:summary="RPiMCv1.0.jar"
+        android:title="Server file name">
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="/home/pi"
+        android:key="path"
+        android:summary="/home/pi"
+        android:title="Path of server file">
+    </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Startup">
+    <SwitchPreference
+        android:title="Turn on Hotspot"
+        android:key="start_host"
+        android:summary="when app start"
+        android:defaultValue="true">
+    </SwitchPreference>
+    <SwitchPreference
+        android:title="Turn off Hotspot"
+        android:key="stop_host"
+        android:summary="when app exit"
+        android:defaultValue="true">
+    </SwitchPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other">
+    <ListPreference
+        android:title="Type of turn"
+        android:key="turn"
+        android:summary="One wheel"
+        android:entries="@array/trun_name"
+        android:defaultValue="1"
+        android:entryValues="@array/trun_value">
+    </ListPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="forward"
+        android:key="forward"
+        android:summary="forward"
+        android:title="Forward">
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="backward"
+        android:key="backward"
+        android:summary="backward"
+        android:title="Backward">
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="left"
+        android:key="left"
+        android:summary="left"
+        android:title="Left">
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="right"
+        android:key="right"
+        android:summary="right"
+        android:title="Right">
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="stop"
+        android:key="stop"
+        android:summary="stop"
+        android:title="Stop">
+    </EditTextPreference>
+</PreferenceScreen>

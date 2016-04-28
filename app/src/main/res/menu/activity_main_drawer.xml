@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_con_st" android:icon="@drawable/ic_connect"
+            android:title="Connection Satutus" />
+        <item android:id="@+id/nav_add" android:icon="@android:drawable/ic_menu_add"
+            android:title="Add new voice commnad" />
+        <item android:id="@+id/nav_shutdown" android:icon="@drawable/ic_shutdown"
+            android:title="Turn off Pi" />
+    </group>
+
+    <item android:title="Menu">
+        <menu>
+            <item android:id="@+id/nav_settings" android:icon="@android:drawable/ic_menu_preferences"
+                android:title="Settings" />
+            <item android:id="@+id/nav_exit" android:icon="@android:drawable/ic_menu_send"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

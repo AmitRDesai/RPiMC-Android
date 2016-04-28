@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="140dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.rpimc.hari.rpimc.Remote_Control">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+       android:background="@drawable/b_forward"
+        android:id="@+id/bforwad"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/b_backward"
+        android:id="@+id/bbackword"
+        android:layout_below="@+id/bforwad"
+        android:layout_toRightOf="@+id/bleft"
+        android:layout_toEndOf="@+id/bleft" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/b_left"
+        android:id="@+id/bleft"
+        android:layout_below="@+id/bforwad"
+        android:layout_toLeftOf="@+id/bforwad"
+        android:layout_toStartOf="@+id/bforwad" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/b_right"
+        android:id="@+id/bright"
+        android:layout_below="@+id/bforwad"
+        android:layout_toRightOf="@+id/bforwad"
+        android:layout_toEndOf="@+id/bforwad" />
+</RelativeLayout>
